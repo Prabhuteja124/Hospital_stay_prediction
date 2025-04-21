@@ -7,7 +7,7 @@ This project is part of an internship assignment focused on predicting the **len
 
 ---
 
-## 🎯 Objective
+##  Objective
 
 - Perform exploratory data analysis (EDA) on hospital data.
 - Train multiple classification models to predict patient length of stay.
@@ -18,7 +18,7 @@ This project is part of an internship assignment focused on predicting the **len
 
 ---
 
-## 📊 Dataset Description
+##  Dataset Description
 
 The dataset includes the following features:
 
@@ -30,7 +30,7 @@ The dataset includes the following features:
 
 ---
 
-## 🧠 Models Implemented
+##  Models Implemented
 
 The following models were implemented and evaluated:
 
@@ -46,7 +46,7 @@ The following models were implemented and evaluated:
 
 ---
 
-## 📈 Evaluation Metrics
+##  Evaluation Metrics
 
 Each model was evaluated using the following metrics:
 
@@ -56,7 +56,7 @@ Each model was evaluated using the following metrics:
 
 ---
 
-## ✅ Best Performing Model
+##  Best Performing Model
 
 - **Model**: LightGBM Classifier
 - **Tuned Parameters**:  
@@ -69,7 +69,7 @@ Each model was evaluated using the following metrics:
 
 ---
 
-## 📄 Reports
+##  Reports
 
 - [`reports/model_comparison.md`](reports/model_comparison.md): Model performance and recommendation for production.
 - [`reports/challenges.md`](reports/challenges.md): Data challenges and strategies used for handling them.
