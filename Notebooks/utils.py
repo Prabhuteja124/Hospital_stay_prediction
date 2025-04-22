@@ -9,12 +9,6 @@ def detect_outliers_iqr(data, continuous_columns):
     """
     Detects outliers using IQR method for continuous columns.
     
-    Parameters:
-    - data: pd.DataFrame
-    - continuous_columns: list of continuous numerical column names
-    
-    Returns:
-    - pd.DataFrame with outlier count and percentage for each column
     """
     outlier_summary = []
 
@@ -37,7 +31,7 @@ def detect_outliers_iqr(data, continuous_columns):
         })
 
     outlier_df = pd.DataFrame(outlier_summary)
-    print("📊 Outlier Summary (IQR Method):\n")
+    print(" Outlier Summary (IQR Method):\n")
     # print(outlier_df)
     return outlier_df
 
@@ -47,20 +41,13 @@ import seaborn as sns
 def plot_boxplots(data, columns, n_cols=3, figsize=(20, 20), color_palette='Set2'):
     """
     Plots boxplots for the given numerical columns to check for outliers.
-
-    Parameters:
-    - data: pd.DataFrame
-    - columns: list of column names (numerical)
-    - n_cols: number of plots per row (default=3)
-    - figsize: size of the entire figure (default=(20,20))
-    - color_palette: seaborn color palette (default='Set2')
     """
 
     sns.set(style="whitegrid")
     n_rows = (len(columns) + n_cols - 1) // n_cols
 
     plt.figure(figsize=figsize, facecolor='white')
-    plt.suptitle("📦 Boxplots for Outlier Detection", fontsize=24, fontweight='bold', color='black', y=1.02)
+    plt.suptitle(" Boxplots for Outlier Detection", fontsize=24, fontweight='bold', color='black', y=1.02)
 
     for idx, column in enumerate(columns, 1):
         ax = plt.subplot(n_rows, n_cols, idx)
